@@ -125,18 +125,18 @@ switch (mes) {
     case 'agosto':
     case 'octubre':
     case 'diciembre':
-    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length-1)
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
     console.log(`${mes} tiene 31 días`)
     break
     case 'febrero':
-    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length-1)
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
     console.log(`${mes} tiene 28 días`)
     break
     case 'abril':
     case 'junio':
     case 'septiembre':
     case 'noviembre':
-    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length-1)
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
     console.log(`${mes} tiene 30 días`)
     break
     default:
