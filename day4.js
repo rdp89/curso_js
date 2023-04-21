@@ -142,3 +142,35 @@ switch (mes) {
     default:
     console.log("Dato erroneo introducido...")
 }
+
+//2. Write a program which tells the number of days in a month, now consider leap year.
+let anio = prompt("Introduce el año: ")
+switch (mes) {
+    case 'enero':
+    case 'marzo':
+    case 'mayo':
+    case 'julio':
+    case 'agosto':
+    case 'octubre':
+    case 'diciembre':
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
+    console.log(`${mes} tiene 31 días`)
+    break
+    case 'febrero':
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
+    if(anio % 4 == 0 && anio % 100 != 0 && anio % 400 == 0) {
+    console.log(`${mes} tiene 29 días`)
+    } else {
+      console.log(`${mes} tiene 29 días`)
+    }
+    break
+    case 'abril':
+    case 'junio':
+    case 'septiembre':
+    case 'noviembre':
+    mes = mes.charAt(0).toUpperCase() + mes.substring(1,mes.length)
+    console.log(`${mes} tiene 30 días`)
+    break
+    default:
+    console.log("Dato erroneo introducido...")
+}
